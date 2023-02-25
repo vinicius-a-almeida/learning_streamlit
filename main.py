@@ -45,14 +45,14 @@ def get_user_data():
     dpf = st.sidebar.slider("Historico familiar de diabetes", 0.0, 3.0, 0.0)
     age = st.sidebar.slider("Idade", 15, 100, 21)
 
-    user_data = {"gravidez": pregnancies,
-             "glicose": glucose,
-             "Pressão sanguinea": blood_pressure,
-             "Espessura da pele": skin_thickness,
-             "Insulina": insulin,
-             "Indice massa corporal": bmi,
-             "Historico familiar de diabetes": dpf,
-             "Idade": age
+    user_data = {"Pregnancies": pregnancies,
+             "Glucose": glucose,
+             "BloodPressure": blood_pressure,
+             "SkinThickness": skin_thickness,
+             "Insulin": insulin,
+             "BMI": bmi,
+             "DiabetesPedigreeFunction": dpf,
+             "Age": age
              }
     #user_data = [pregnancies, glucose, blood_pressure, skin_thickness, insulin, bmi, dpf, age]
     features = pd.DataFrame(user_data, index = [0])
