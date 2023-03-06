@@ -1,3 +1,5 @@
+#28:37 video 2
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -29,4 +31,15 @@ import numpy as np
 
 #interação
 
-st.sidebar.button("Exibir gráfico")
+#if st.sidebar.button("Exibir gráfico"):
+#    df = pd.DataFrame(
+ #       np.random.randn(10, 3),
+  #      columns=['Preço', 'Taxa de ocupação', 'Taxa de inadimplencia']
+   # )
+    #st.bar_chart(df)
+
+
+check = st.sidebar.checkbox("Aceita os termos de uso?")
+
+if check:
+    st.write("Você aceitou os termos de uso")
